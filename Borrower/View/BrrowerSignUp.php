@@ -1,3 +1,7 @@
+<?php
+include "../Controller/SignUpCheck.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,24 +25,34 @@
               <tr>
                   <td> <label for="fname">First Name:</label></td>
                   <td> <input type="text" id="fname" name="fname" placeholder="Enter your first name" >
+                  <?php
+                  echo "<span style='color:red;'><small><b>".$fnameerr."</b></small></span>";
+                  ?></td>
                   </td>
               </tr>
 
               <tr>
                   <td> <label for="lname">Last Name:</label></td>
                   <td> <input type="text" id="lname" name="lname" placeholder="Enter your last name" >
+                    <?php
+                  echo "<span style='color:red;'><small><b>".$lnameerr."</b></small></span>";
+                  ?>
                   </td>
               </tr>
 
               <tr>
                   <td> <label for="uname">Username:</label></td>
                   <td> <input type="text" id="uname" name="uname" placeholder="Choose unique username" >
+                    <?php
+                  echo "<span style='color:red;'><small><b>".$unameerr."</b></small></span>";
+                  ?>
                   </td>
               </tr>
 
               <tr>
                   <td> <label for="pass">Password:</label></td>
                   <td> <input type="Password" id="pass" name="pass" placeholder="Enter password" >
+
                   </td>
               </tr>
 
@@ -51,6 +65,7 @@
               <tr>
                   <td> <label for="age">Age:</label></td>
                   <td> <input type="number" id="age" name="age" min="1" placeholder="Enter your age" >
+                    <?php echo "<span style='color:red;'><small><b>".$ageerr."</b></small></span>"; ?>
                   </td>
               </tr>
 
@@ -59,18 +74,21 @@
                   <td> <input type="radio" id="male" name="gender" value="Male">Male
                        <input type="radio" id="female" name="gender" value="Female">Female
                        <input type="radio" id="others" name="gender" value="Others">Others
+                       <?php echo "<span style='color:red;'><small><b>".$gendererr."</b></small></span>"; ?>
                   </td>
               </tr>
 
               <tr>
                   <td> <label for="mobileNo">Mobie No:</label></td>
                   <td> <input type="number" id="mobileNo" name="mobileNo" min="0" max="99999999999" placeholder="Enter your mobile no" >
+                    <?php echo "<span style='color:red;'><small><b>".$mobileNoerr."</b></small></span>"; ?>
                   </td>
               </tr>
 
               <tr>
                   <td> <label for="email">E-mail:</label></td>
                   <td> <input type="text" id="email" name="email" placeholder="Enter your e-mail" >
+                    <?php echo "<span style='color:red;'><small><b>".$emailerr."</b></small></span>"; ?>
                   </td>
               </tr>
 
@@ -86,7 +104,7 @@
               <tr>
                 <td></td>
                 <td >
-                    <input type="submit" name="signUp"  value="Signup">
+                    <input type="submit" name="SignUp"  value="Signup">
                     <input type="reset" name="Reset">
                 </td>
               </tr>
@@ -96,7 +114,7 @@
 
               <tr>
                 <td colspan="2" align="center">
-                <a href="AdminLogin.php">Back</a>
+                <a href="BorrowerHP.php">Back</a>
                 </td>
               </tr>
 
