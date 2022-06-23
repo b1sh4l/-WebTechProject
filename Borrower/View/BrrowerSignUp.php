@@ -92,11 +92,6 @@ include "../Controller/SignUpCheck.php";
                   </td>
               </tr>
 
-              <tr>
-                  <td> <label for="image">Please choose a file:</label></td>
-                  <td> <input type="file" id="image" name="image">
-                  </td>
-              </tr>
 
               <tr><td></td><td></td></tr>
               <tr><td></td><td></td></tr>

@@ -44,18 +44,18 @@ else{
 
     $uname=$_POST["uname"];
 
-    if(empty($uname)|| !preg_match ("/^[a-zA-z]*$/", $uname) || strlen($uname)<4)
+    if(empty($uname)|| strlen($uname)<3)
     {
     $unameerr= " Please enter an username!";
     }
 
-    else if(strlen($uname)!=4)
+    /*else if(strlen($uname)!=3)
     {
-        $unameerr="Admin Id must be 5 Numbers";
-    }
+        $unameerr=" Admin Id must be 5 Numbers";
+    }*/
     else if ($count2==1)
     {
-        $unameerr ="Please enter a unique id!This is already exist!!";
+        $unameerr =" Please enter a unique id!This is already exist!!";
     }
 
     else
@@ -116,15 +116,17 @@ else{
 
 
     $mobileNo=$_POST["mobileNo"];
-if(empty("$mobileNo")){
+    if(empty("$mobileNo")){
 
     $mobileNoerr= " Please enter Contact No!";
     
     }
-    else if(strlen($mobileNo)!=11){
+    else if(strlen($mobileNo)!=11)
+    {
         $mobileNoerr= " Please enter Valid Contact No!";
     }
-    else{
+    else
+    {
         $_SESSION["mobileNo"]=$mobileNoerr;
         $count++;
         
@@ -133,52 +135,40 @@ if(empty("$mobileNo")){
 
     $email=$_POST["email"];
     if(empty($email) || !preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix",$email))
-{
+    {
     $emailerr="Please enter a valid email!";
-}
-else{
+    }
+
+    else
+    {
     $count++;
     $_SESSION["email"]=$email;
-}
-if ($_FILES["myfile"]["type"]=="image/jpeg" ){
-    
-if(move_uploaded_file($_FILES["myfile"]["tmp_name"], "../Images/".$fname.$lname."Admin".date("Y-m-d").".jpg")){
-    $count++;
-    
-}
-else{
-    $fileerr="Please choose a jpg file!";
-}
-}
-else{
-    $fileerr="Please choose a jpg file!";
-}
+    }
 
-
-if($count==3){
+    if($count==9)
+    {
         $formdata=array(
             'firstname'=>$_SESSION["fname"],
             'lastname'=>$_SESSION["lname"],
+            'uname'=>$uname,
+            'pass'=>$pass,
             'age'=>$_SESSION["age"],
             'gender'=> $_SESSION["gender"],
-            'contNo'=> $_SESSION["contNo"],
+            'mobileNo'=> $_SESSION["mobileNo"],
             'email'=>$_SESSION["email"],
-            'uname'=>$uname,
-            'pass'=>$pass
-     
-     
         );
-        $existingdata = file_get_contents('../Files/Admin.json');
+
+        $existingdata = file_get_contents('../Model/BorrowerList.json');
         $tempJSONdata = json_decode($existingdata);
         $tempJSONdata[] =$formdata;
         $jsondata = json_encode($tempJSONdata, JSON_PRETTY_PRINT);
-        if(file_put_contents("../Files/Admin.json", $jsondata)) {
+        if(file_put_contents("../Model/BorrowerList.json", $jsondata)) 
+        {
          $dataerr= "Successfully Registered!! <br>";
-         session_destroy();
-        
-         
-     }
-     else {
+         session_destroy();  
+        }
+     else 
+     {
          $dataerr= "Registration unsucessfull!! Please try again!!";
      }
 
@@ -187,5 +177,6 @@ if($count==3){
            header("location: ../View/AdminRegistrationPage2.php");
        }*/
    }
+}
 
 ?>
