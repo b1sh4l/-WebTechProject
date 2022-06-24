@@ -3,7 +3,7 @@ $uname=$pass="";
 $unameerr=$passerr=$signinerr="";
 $count=$count2=0;
 session_start();
-if(isset($_SESSION["uname"])){
+if(isset($_SESSION["uname1"])){
     header("location: ../View/WelcomeBorrower.php");
 }
 

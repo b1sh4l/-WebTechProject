@@ -21,6 +21,14 @@
         </center>
         </form>
     </div>
+
+    <div>
+        <form action="../Controller/SignOutCheck.php" method="get">
+            <br>
+            <center><input type="submit" value="Sign Out" name="btnsignout"></center>
+        </form>
+    </div>
+
 </body>
 </html>
 <?php
