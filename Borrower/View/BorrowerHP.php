@@ -22,7 +22,7 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         table, th, td {
-          border: 1px solid black;
+          border: none;
         }
         </style>
     <title>Borrower Homepage</title>
@@ -31,24 +31,56 @@ else
 <body>
     <div>
         <form action="#" method="post">
-    	<center>
-        <h2><b><u>BORROWER</u></b></h2>
-    	<br>
-    	Username: <input type="text" id="uname" name="uname">
-        <?php echo "<span style='color:red;'><small><b>".$unameerr."</b></small></span>"; ?>
-    	<br><br>
-    	Password: <input type="password" id="pass" name="pass">
-        <?php echo "<span style='color:red;'><small><b>".$passerr."</b></small></span>"; ?>
-    	<br><br>
-        <input type="submit" value="Signin" name="btnsignin">
-        </center>
+        <h2><center><b><u>BORROWER</u></b></center></h2>
+    	<table align="center">
+            <tr>
+                  <td> <label for="uname">Username:</label></td>
+                  <td> <input type="text" id="uname" name="uname" placeholder="Enter username" >
+                  <?php
+                  echo "<span style='color:red;'><small><b>".$unameerr."</b></small></span>";
+                  ?></td>
+                  </td>
+            </tr>
+            <tr>
+                  <td> <label for="pass">Password:</label></td>
+                  <td> <input type="password" id="pass" name="pass" placeholder="Enter password" >
+                  <?php
+                  echo "<span style='color:red;'><small><b>".$passerr."</b></small></span>";
+                  ?></td>
+              </tr>
+
+
+              <tr><td></td><td></td></tr>
+              <tr><td></td><td></td></tr>
+
+              <tr>
+                <td></td>
+                <td >
+                    <input type="checkbox" name="remember_me" value="remember_me">Remember me
+                </td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td >
+                    <input type="submit" value="Signin" name="btnsignin">
+                    <input type="reset" name="Reset">
+                </td>
+              </tr>
+        </table>
         </form>
     </div>
 
     <div>
         <form action="../View/BrrowerSignUp.php" method="post">
-            <br>
-            <center><input type="submit" value="Sign up" name="btnsignup"></center>
+            <table align="center">
+                <tr>
+                <td></td>
+                <td >
+                    <input type="submit" value="Sign up" name="btnsignup">
+                </td>
+              </tr>
+            </table>
         </form>
     </div>
 </body>
