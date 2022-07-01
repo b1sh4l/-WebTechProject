@@ -103,6 +103,11 @@ include "../Controller/SignUpCheck.php";
                     <input type="reset" name="Reset">
                 </td>
               </tr>
+              <tr><td></td><td></td></tr>
+              <tr><td></td><td></td></tr>
+
+              <tr><<td colspan="2" align="center"> <?php echo "<span style='color:red;'><small><b>".$dataerr."</b></small></span>"; ?> </td></tr>
+
 
               <tr><td></td><td></td></tr>
               <tr><td></td><td></td></tr>
@@ -112,6 +117,8 @@ include "../Controller/SignUpCheck.php";
                 <a href="BorrowerHP.php">Back</a>
                 </td>
               </tr>
+
+            </table>
 
 
     	

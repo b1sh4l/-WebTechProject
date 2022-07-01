@@ -1,6 +1,6 @@
 <?php
 $fname=$lname=$uname=$pass=$cpass=$age=$gender=$mobileNo=$email="";
-$fnameerr=$lnameerr=$unameerr=$passerr=$cpasserr=$ageerr=$gendererr=$mobileNoerr=$emailerr="";
+$fnameerr=$lnameerr=$unameerr=$passerr=$cpasserr=$ageerr=$gendererr=$mobileNoerr=$emailerr=$dataerr="";
 
 $count=$count2=0;
 session_start();
@@ -118,7 +118,7 @@ else{
     $mobileNo=$_POST["mobileNo"];
     if(empty("$mobileNo")){
 
-    $mobileNoerr= " Please enter Contact No!";
+    $mobileNoerr= " Please enter Mobile No!";
     
     }
     else if(strlen($mobileNo)!=11)
@@ -127,7 +127,7 @@ else{
     }
     else
     {
-        $_SESSION["mobileNo"]=$mobileNoerr;
+        $_SESSION["mobileNo"]=$mobileNo;
         $count++;
         
     }
@@ -164,18 +164,14 @@ else{
         $jsondata = json_encode($tempJSONdata, JSON_PRETTY_PRINT);
         if(file_put_contents("../Model/BorrowerList.json", $jsondata)) 
         {
-         $dataerr= "Successfully Registered!! <br>";
+         $dataerr= "SignUp Successful!";
          session_destroy();  
         }
      else 
      {
-         $dataerr= "Registration unsucessfull!! Please try again!!";
+         $dataerr= "SignUp unsucessfull!! Please try again!!";
      }
 
- /*
-       if($count==7){
-           header("location: ../View/AdminRegistrationPage2.php");
-       }*/
    }
 }
 

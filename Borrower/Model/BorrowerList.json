@@ -8,5 +8,35 @@
         "gender": "Male",
         "mobileNo": "",
         "email": "sudarshansahabishal@gmail.com"
+    },
+    {
+        "firstname": "Billy",
+        "lastname": "Butcher",
+        "uname": "Butcher69",
+        "pass": "DuckHome69",
+        "age": "42",
+        "gender": "Male",
+        "mobileNo": "",
+        "email": "callbutcher@hotmail.com"
+    },
+    {
+        "firstname": "Hughie",
+        "lastname": "Cloth",
+        "uname": "teleportguy",
+        "pass": "Starlight1",
+        "age": "25",
+        "gender": "Male",
+        "mobileNo": "",
+        "email": "teleportguy@gmail.com"
+    },
+    {
+        "firstname": "Bruce",
+        "lastname": "Wayne",
+        "uname": "batman",
+        "pass": "Iambatman00",
+        "age": "42",
+        "gender": "Male",
+        "mobileNo": "01215647850",
+        "email": "batman@wayne.com"
     }
 ]

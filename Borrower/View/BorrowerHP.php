@@ -35,16 +35,16 @@ else
     	<table align="center">
             <tr>
                   <td> <label for="uname">Username:</label></td>
-                  <td> <input type="text" id="uname" name="uname" placeholder="Enter username" >
-                  <?php
+                  <td> <input type="text" id="uname" name="uname" value="<?php if(isset($_COOKIE["uname"])) { echo $_COOKIE["uname"]; } ?>" placeholder="Enter username" ></td>
+                  <td><?php
                   echo "<span style='color:red;'><small><b>".$unameerr."</b></small></span>";
                   ?></td>
                   </td>
             </tr>
             <tr>
                   <td> <label for="pass">Password:</label></td>
-                  <td> <input type="password" id="pass" name="pass" placeholder="Enter password" >
-                  <?php
+                  <td> <input type="password" id="pass" name="pass" value="<?php if(isset($_COOKIE["pass"])) { echo $_COOKIE["pass"]; } ?>" placeholder="Enter password" ></td>
+                  <td> <?php
                   echo "<span style='color:red;'><small><b>".$passerr."</b></small></span>";
                   ?></td>
               </tr>
@@ -67,6 +67,16 @@ else
                     <input type="reset" name="Reset">
                 </td>
               </tr>
+
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td colspan="2">
+                    <?php echo "<span style='color:red;'><small><b>".$signinerr."</b></small></span>"; ?>
+                </td>
+            </tr>
+
         </table>
         </form>
     </div>
@@ -76,7 +86,7 @@ else
             <table align="center">
                 <tr>
                 <td></td>
-                <td >
+                <td colspan="3">
                     <input type="submit" value="Sign up" name="btnsignup">
                 </td>
               </tr>

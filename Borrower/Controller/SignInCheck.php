@@ -7,6 +7,17 @@ if(isset($_SESSION["uname1"])){
     header("location: ../View/WelcomeBorrower.php");
 }
 
+
+if(!empty($_POST["remember_me"])) {
+    setcookie ("uname",$_POST["uname"],time()+ 3600*60);
+    setcookie ("pass",$_POST["pass"],time()+ 3600*60);
+}
+
+else {
+    setcookie("uname","");
+    setcookie("pass","");
+}
+
 if(isset($_POST["btnsignin"])){
  
 $uname=$_POST["uname"];
@@ -51,7 +62,7 @@ else{
              header("location: ../View/WelcomeBorrower.php");
         }
         else{
-            $signinerr="Wrong Username or Password!! Signin Failed!!";
+            $signinerr="Wrong Username or Password!!";
           
         }
          
