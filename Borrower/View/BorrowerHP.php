@@ -1,18 +1,7 @@
 <?php
 include "../Controller/SignInCheck.php";
-
-/*setcookie("user_detected", "visited", time() + 86400*7, '/');
-
-if(isset($_COOKIE["user_detected"])) 
-{
-  echo  "<b>You have visited before.</b>";
-}
-else 
-{
-  echo "<b>Welcome! You are visiting for first time</b>.";
-}*/
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
