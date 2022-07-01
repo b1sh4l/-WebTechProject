@@ -57,6 +57,7 @@ else{
 
         }
 
+
         if($count2==1){
            
              header("location: ../View/WelcomeBorrower.php");
