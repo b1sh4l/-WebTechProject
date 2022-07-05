@@ -1,87 +1,42 @@
 [
     {
-        "firstname": "Sudarshan",
-        "lastname": "Bishal",
-        "uname": "Bishal00",
-        "pass": "Bishal00",
-        "age": "106",
-        "gender": "Female",
-        "mobileNo": "01789654169",
-        "email": "yeet.123t@gmail.com"
-    },
-    {
-        "firstname": "Billy",
-        "lastname": "Butcher",
-        "uname": "Butcher69",
-        "pass": "DuckHome69",
+        "firstname": "Bruce",
+        "lastname": "Wayne",
+        "uname": "batman",
+        "pass": "Batmobil00",
         "age": "42",
         "gender": "Male",
-        "mobileNo": "",
-        "email": "callbutcher@hotmail.com"
+        "mobileNo": "01876543210",
+        "email": "batman@mobil.com"
     },
     {
-        "firstname": "Hughie",
-        "lastname": "Cloth",
-        "uname": "teleportguy",
-        "pass": "Starlight1",
-        "age": "25",
+        "firstname": "Vishal",
+        "lastname": "Saha",
+        "uname": "Bishal000",
+        "pass": "Bishal000",
+        "age": "22",
         "gender": "Male",
-        "mobileNo": "",
-        "email": "teleportguy@gmail.com"
+        "mobileNo": "01234532109",
+        "email": "bishal000@gmail.com"
     },
     {
-        "firstname": "Todd",
-        "lastname": "Howard",
-        "uname": "batman",
-        "pass": "Iambatman00",
-        "age": "67",
+        "firstname": "Clerk",
+        "lastname": "Kent",
+        "uname": "superman",
+        "pass": "Krypton00",
+        "age": "32",
         "gender": "Male",
-        "mobileNo": "01236520123",
-        "email": "batmansupe@wayne.com"
+        "mobileNo": "01214521452",
+        "email": "superman@gmail.com"
     },
     {
-        "firstname": "Sudarshan",
-        "lastname": "Bishal",
-        "uname": "Bishal00",
-        "age": "106",
-        "gender": "Female",
-        "mobileNo": "01789654169",
-        "email": "yeet.123t@gmail.com"
-    },
-    {
-        "firstname": "Sudarshan",
-        "lastname": "Bishal",
-        "uname": "Bishal00",
-        "age": "106",
-        "gender": "Female",
-        "mobileNo": "01789654169",
-        "email": "yeet.123t@gmail.com"
-    },
-    {
-        "firstname": "Sudarshan",
-        "lastname": "Bishal",
-        "uname": "Bishal0000",
+        "firstname": "Peter",
+        "lastname": "Parker",
+        "uname": "Spidey",
+        "pass": "Spidey00",
         "age": "21",
-        "gender": "Female",
-        "mobileNo": "01254230325",
-        "email": "sudarshansahabishal@gmail.com"
-    },
-    {
-        "firstname": "Sudarshan",
-        "lastname": "Bishal",
-        "uname": "Bishal00",
-        "age": "106",
-        "gender": "Female",
-        "mobileNo": "01789654169",
-        "email": "yeet.123t@gmail.com"
-    },
-    {
-        "firstname": "Sudarshan",
-        "lastname": "Bishal",
-        "uname": "Bishal00",
-        "age": "106",
-        "gender": "Female",
-        "mobileNo": "01789654169",
-        "email": "yeet.123t@gmail.com"
+        "gender": "Male",
+        "mobileNo": "02123654125",
+        "email": "spidey@gmail.com"
     }
 ]
