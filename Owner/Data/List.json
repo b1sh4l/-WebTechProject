@@ -1,0 +1,22 @@
+[
+    {
+        "firstname": "Abdul",
+        "lastname": "Aziz",
+        "uname": "sajib",
+        "pass": "#@Sajib5",
+        "age": "23",
+        "gender": "Male",
+        "mobileNo": "01782521705",
+        "email": "abdulazizsajib@gmail.com"
+    },
+    {
+        "firstname": "Bijoy",
+        "lastname": "Bijoy",
+        "uname": "bijoy",
+        "pass": "#@Sajib5",
+        "age": "25",
+        "gender": "Male",
+        "mobileNo": "01782521705",
+        "email": "abdulazizsajib@gmail.com"
+    }
+]
