@@ -77,7 +77,7 @@
           $arr[$index]-> password=$_POST['newPassword'];
 
 
-          $handle= fopen("../gr/Data/data.json", "w");
+          $handle= fopen("../Admin/Data/data.json", "w");
 
 
 
