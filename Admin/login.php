@@ -74,6 +74,8 @@
 
 	?>
 
+	<center><button onclick="history.back()" >Homepage</button></center>
+
 	<?php
        include "footer.php";
     ?>

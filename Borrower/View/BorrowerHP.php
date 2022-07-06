@@ -82,5 +82,6 @@ include "../Controller/SignInCheck.php";
             </table>
         </form>
     </div>
+    <center><button onclick="history.back()" >Homepage</button></center>
 </body>
 </html>

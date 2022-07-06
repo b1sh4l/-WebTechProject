@@ -8,16 +8,6 @@ if(isset($_SESSION["uname1"])){
 }
 
 
-if(!empty($_POST["remember_me"])) {
-    setcookie ("uname",$_POST["uname"],time()+ 3600*60);
-    setcookie ("pass",$_POST["pass"],time()+ 3600*60);
-}
-
-else {
-    setcookie("uname","");
-    setcookie("pass","");
-}
-
 if(isset($_POST["btnsignin"])){
  
 $uname=$_POST["uname"];
