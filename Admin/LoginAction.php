@@ -59,7 +59,6 @@
                  $_SESSION['address']=$arr[$index]->address;
                  $_SESSION['age']=$arr[$index]->age;
                  $_SESSION['dob']=$arr[$index]->dob;
-                 $_SESSION['fow']=$arr[$index]->fow;
 				header("Location: home.php");
 			}
 
