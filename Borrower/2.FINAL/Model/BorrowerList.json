@@ -1,0 +1,42 @@
+[
+    {
+        "firstname": "Bishal",
+        "lastname": "Saha",
+        "uname": "altggez4",
+        "pass": "Altggez4",
+        "age": "69",
+        "gender": "Male",
+        "mobileNo": "01232145632",
+        "email": "sudarshansahabishal@gmail.com"
+    },
+    {
+        "firstname": "Clark",
+        "lastname": "Kent",
+        "uname": "Superman",
+        "pass": "Superman69",
+        "age": "44",
+        "gender": "Male",
+        "mobileNo": "01236541202",
+        "email": "superman@hotmail.com"
+    },
+    {
+        "firstname": "Diana",
+        "lastname": "Princess",
+        "uname": "wonderwoman",
+        "pass": "Wonderwoman84",
+        "age": "39",
+        "gender": "Male",
+        "mobileNo": "01230212302",
+        "email": "wonderwoman@gmail.com"
+    },
+    {
+        "firstname": "Tony",
+        "lastname": "Stark",
+        "uname": "ironman",
+        "pass": "Ironman00",
+        "age": "35",
+        "gender": "Male",
+        "mobileNo": "03210254632",
+        "email": "ironman@stark.com"
+    }
+]

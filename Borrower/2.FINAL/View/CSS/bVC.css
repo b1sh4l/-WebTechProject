@@ -1,0 +1,27 @@
+body{
+	background-color:#2b282cd7;
+	align-items:center;
+	justify-content:center;
+	min-height:100px;
+	margin:0px;
+    color: #f7f7f7;
+}
+.header{
+	background-color:#f7f7f7;
+	text-align:center;
+	padding:5px 20px;
+}
+.header h3{
+	color:#dd41e2;
+}
+
+input[type=submit] {
+    background-color: #dd41e2;
+	border: 2px solid #dd41e2;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	padding: 5px;
+	margin-top: 5px;
+}
