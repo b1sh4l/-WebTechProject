@@ -1,0 +1,53 @@
+
+<?php
+
+require 'connect.php';
+
+$sql = "SELECT * FROM customers WHERE username = '$Username'";
+$result = $conn->query($sql);
+if($result->num_rows > 0){
+  
+ while($row = $result->fetch_assoc()) {
+   $id=$row["id"];
+   $username= $row["username"];
+   $fname =  $row["firstname"];
+   $lname =  $row["lastname"];
+   $presentAddress =$row["PresentAddress"];
+   $phone =$row["Phone"];
+   $email =$row["email"];
+   $gender= $row["gender"];
+   $bday=$row["birthday"];
+   $religion=$row["religion"];
+  
+  }
+
+ return true;
+}
+else{
+  return false;
+}
+
+$conn->close();
+
+function exportTableToExcell (tableID)
+{
+	var downloadLink;
+	var dataType = "application/vnd.openxmlformats-officedocuments.spreedsheetml.sheet";
+	var tableSelect = document.getElementById(tableID);
+	var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+	
+	filename = 'excell_data.xls';
+	downloadLink = document.createElement("a");
+	document.body.appendChild(downloadLink);
+	
+	if(navigator.msSaveOrOpenBlob){
+		var blob = new Blob(["\ufeff", "tableHTML"], {type: dataType});
+	}
+	else{
+		downloadLink.href = 'data' + dataType + 'a' + tableHTML;
+		downloadLink.download = filename;
+		downloadLink.click();
+}
+}
+
+?>
